@@ -1,6 +1,6 @@
 
 use std::env;
-use clap::{arg, command, Arg, ArgAction, Command};
+use clap::{command, Arg, ArgAction};
 
 pub mod gh_helpers;
 
