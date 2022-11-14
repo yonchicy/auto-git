@@ -15,10 +15,10 @@
 即使使用了`gh cli`整个过程也比较繁琐，现在想通过这个程序将过程优化成
 
 ```shell
-auto-git new project-name --public # --private
+auto-git --new project-name --public # --private
 # 自动新建远程仓库，新建本地目录，并链接二者
 
-auto-git push project-name --public # --private
-# 自动新建远程仓库，并把本地内容推送上去
+auto-git --push  --public # --private
+# 自动新建一个与当前目录同名的远程仓库，并把本地内容推送上去
 ```
 
