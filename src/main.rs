@@ -38,10 +38,11 @@ fn main() {
     
     if is_push_mode {
         let dir_path = env::current_dir().unwrap();
-        let dir_name = dir_path.file_name();
+        let dir_name = dir_path.file_name().unwrap();
 
         //todo
         println!("pushing {:?} ,is a is_public_repo{{{}}}",dir_name,is_public_repo);
+        gh_helpers::push_mode(dir_name.to_str().unwrap(),is_public_repo);
         
     }
     else {
